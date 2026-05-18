@@ -27,84 +27,20 @@
     <p>Got a meet coming up? Want your car featured? Shoot a message and let's make it happen.</p>
   </div>
 
-  <!-- ── CONTACT SECTION ── -->
+  <!-- ── SOCIALS ── -->
   <section>
-    <div class="container">
-      <div class="contact-grid">
+    <div class="container" style="padding-top:3rem;padding-bottom:3rem;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;max-width:480px;margin:0 auto;">
 
-        <!-- Left: Info -->
-        <div class="contact-info">
-          <h2>Let's Link Up</h2>
-          <p>
-            Whether you're organising a meet, want your build featured on the blog, have a tip on an upcoming
-            takeover, or just want to connect with the carspottingbymahi crew — this is how you reach us.
-            We reply to everything, usually within 24 hours.
-          </p>
+        <a href="https://instagram.com/mahi_a_k_" target="_blank" class="contact-detail" style="width:100%;text-decoration:none;border:1px solid var(--border);padding:1.25rem 1.5rem;background:var(--card-bg);transition:border-color 0.2s;">
+          <div class="icon">📸</div>
+          <span style="font-family:'Oswald',sans-serif;font-size:1.1rem;color:var(--cream);">@mahi_a_k_</span>
+        </a>
 
-          <div class="contact-detail">
-            <div class="icon">✉</div>
-            <span>mahiak90000@gmail.com</span>
-          </div>
-
-          <div class="contact-detail">
-            <div class="icon">📸</div>
-            <span>@mahi_a_k_ on Instagram</span>
-          </div>
-
-          <!-- Feature request box -->
-          <div style="margin-top:2.5rem;background:var(--card-bg);border:1px solid var(--border);padding:1.5rem;">
-            <div style="font-family:'Orbitron',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Want Your Car Featured?</div>
-            <p style="font-size:0.92rem;color:var(--text-muted);line-height:1.65;">
-              Drop us your Instagram handle, your build details, and a couple of shots. If it fits the scene,
-              we'll get you on the front page.
-            </p>
-          </div>
-        </div>
-
-        <!-- Right: Form -->
-        <div>
-          <form action="#" method="POST" onsubmit="handleSubmit(event)">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="First & Last name" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject">
-                <option value="">— Select a subject —</option>
-                <option value="feature">Feature my car / build</option>
-                <option value="meet">Announce an upcoming meet</option>
-                <option value="collab">Collaboration / media</option>
-                <option value="tip">Send a tip / sighting</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="instagram">Instagram Handle (optional)</label>
-              <input type="text" id="instagram" name="instagram" placeholder="@yourhandle" />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us about your car, your meet, or whatever's on your mind..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
-              Send It ›
-            </button>
-
-            <p id="form-success" style="display:none;margin-top:1rem;font-family:'Orbitron',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);text-align:center;">
-              ✓ Message sent — we'll be in touch soon.
-            </p>
-          </form>
-        </div>
+        <a href="mailto:mahiak90000@gmail.com" class="contact-detail" style="width:100%;text-decoration:none;border:1px solid var(--border);padding:1.25rem 1.5rem;background:var(--card-bg);transition:border-color 0.2s;">
+          <div class="icon">✉</div>
+          <span style="font-family:'Oswald',sans-serif;font-size:1.1rem;color:var(--cream);">mahiak90000@gmail.com</span>
+        </a>
 
       </div>
     </div>
@@ -154,13 +90,6 @@
     </div>
   </footer>
 
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      document.getElementById('form-success').style.display = 'block';
-      e.target.reset();
-    }
-  </script>
 
 </body>
 </html>
