@@ -704,6 +704,44 @@ footer {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    RESPONSIVE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   VIDEO GRID
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.vid-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9/16;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.vid-card:hover {
+  border-color: var(--gold-dark);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px var(--gold-dark);
+}
+
+.vid-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .video-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 900px) {
   .card.featured { flex-direction: column; }
   .card.featured .card-img { width: 100%; }
