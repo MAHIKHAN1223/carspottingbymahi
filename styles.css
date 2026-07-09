@@ -99,18 +99,18 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 0.25rem;
+  gap: 0.1rem;
 }
 
 .nav-links a {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--chrome);
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 0.65rem;
   border: 1px solid transparent;
   transition: all 0.2s;
   clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
